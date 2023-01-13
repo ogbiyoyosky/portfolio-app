@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            Currency Converter
+        </header>
+        <form>
+            <div class ="amount">
+                <p> Enter Amount</p>
+                <input type="number" value="1" placeholder="1" id="amt" min="0" max="999999999"  />
+                <span id="error">Maximum amount: 999999999</span>
+            </div>
+            <div class="country-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-country">
+                        <select>  
+                     </select>
+                    </div>
+                    </div>
+                    <div class="icon">
+                        <img src="./icons8-exchange-30.png" alt="">
+                    </div>
+                    <div class="to">
+                    <p>To</p>
+                    <div class="select-country">
+                        <select>    
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="current-rate">
+                
+            </div>
+            <div class="rate">
+                
+            </div>
+              <div class="date">
+             
+            </div>
+              <div class="exchange-date">
+               
+            </div>
+    
+            <button id="btn">
+                Get Exchange Rate
+            </button>
+        </form>
+    </div> 
+    <script src="./script.js"></script>
+</body>
+</html>

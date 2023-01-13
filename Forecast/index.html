@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forecaster</title>
+  </head>
+  <body>
+    <section id="historical">
+      <div class="header">
+        <h1>Historical Mode</h1>
+      </div>
+      <div class="year">
+        <h3 id="yearRange">2021-2022</h3>
+      </div>
+      <div class="headerBtnContainer">
+        <button id="headerBtn" onclick="toggleFunction('historical')">
+          Forecast mode
+        </button>
+      </div>
+
+      <div>
+        <canvas id="historicalChart" width="200" height="80"> </canvas>
+      </div>
+      <!-- pagination -->
+      <div class="pagination">
+        <button id="prevBtn" onclick="handlePrevious()">Previous</button>
+        <button id="nextBtn" onclick="handleNext()">Next</button>
+      </div>
+    </section>
+    <section id="forecast" style="display: none">
+      <div class="header">
+        <h1>Forecast Mode</h1>
+      </div>
+      <div class="year">
+        <h3 id="yearRange">2022-2023</h3>
+      </div>
+      <div class="headerBtnContainer">
+        <button id="headerBtn" onclick="toggleFunction('forecast')">
+          Historical mode
+        </button>
+      </div>
+
+      <div>
+        <canvas id="forecastChart" width="200" height="80"> </canvas>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- <script type="module" src="./data.js"></script> -->
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

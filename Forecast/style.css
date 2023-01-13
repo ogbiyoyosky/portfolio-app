@@ -1,0 +1,73 @@
+body {
+  width: 1000px;
+  margin: auto;
+  font-family: 'Lexend', sans-serif;
+}
+
+button {
+  font-family: 'Lexend', sans-serif;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.year {
+  text-align: center;
+}
+
+.headerBtnContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#headerBtn {
+  background-color: #e04747;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 4px;
+}
+
+#headerBtn:hover {
+  background-color: #e43030;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#prevBtn {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: #101010;
+  border: 1px solid #101010;
+}
+#prevBtn:hover {
+  background-color: #f2f4f5;
+}
+
+#nextBtn {
+  padding: 10px 16px;
+  background-color: #222020;
+  color: white;
+}
+
+#nextBtn:hover {
+  background-color: #101010;
+}
