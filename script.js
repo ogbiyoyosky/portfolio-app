@@ -61,3 +61,21 @@ document
         e.preventDefault;
         document.body.classList.toggle('menu-toggle');
     });
+
+    function validateForm() {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+
+        if (fname == "" || lname == "" || email == "" || subject == "") {
+            alert("Please fill in all fields!");
+            return false;
+        } else {
+          
+          alert("Message successfully sent");
+        } 
+
+    } 
+
+  

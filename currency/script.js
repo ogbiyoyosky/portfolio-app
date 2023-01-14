@@ -1,5 +1,5 @@
 let countries;
-const url = "http://www.floatrates.com/daily/eur.json";
+const url = "https://www.floatrates.com/daily/eur.json";
 
 const getCountryList = () => {
   fetch(url)
@@ -61,7 +61,7 @@ function errorMessage() {
 
 function TimeStamp() {
   TimeStampTxt = document.querySelector(".exchange-date");
-  let url = `http://www.floatrates.com/daily/${fromCurrency.value}.json`;
+  let url = `https://www.floatrates.com/daily/${fromCurrency.value}.json`;
 
   fetch(url)
     .then((response) => response.json())
@@ -74,7 +74,7 @@ function getCurrentRate() {
   currentExchangeRateTxt = document.querySelector(".current-rate");
   let amountVal = 1;
 
-  let url = `http://www.floatrates.com/daily/${fromCurrency.value}.json`;
+  let url = `https://www.floatrates.com/daily/${fromCurrency.value}.json`;
 
   fetch(url)
     .then((response) => response.json())
@@ -96,7 +96,7 @@ function getExchangeRate() {
   }
   totalExchangeRateTxt.innerText = "Getting exchange rate...";
 
-  let url = `http://www.floatrates.com/daily/${fromCurrency.value}.json`;
+  let url = `https://www.floatrates.com/daily/${fromCurrency.value}.json`;
 
   fetch(url)
     .then((response) => response.json())
