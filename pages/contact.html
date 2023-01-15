@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+     <link rel="stylesheet" href="../style.css">
+     <link rel="manifest" href="../manifest.json" />
+</head>
+<body >
+  <div class="splash-screen">
+    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<main>
+  <section id="navigation" class="navigation">
+    <div class="desktop-navigation">
+        <img src="../assets/logo-colored.svg" alt="logo" class="colored-logo" />
+        <ul>
+            <li><a id="home-link" href="../index.html">Home</a></li>
+            <li><a href="../pages/education.html">Education</a></li>
+            <li><a href="../pages/education.html">Experience</a></li>
+            <li><a href="../pages/skill.html">Skillset</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+        </ul>
+        <a href="../pages/contact.html" class="outlined-button">Let’s chat</a>
+    </div>
+    <div class="mobile-navigation">
+        <img src="../assets/logo-colored.svg" alt="logo" class="colored-logo" />
+        <button id="menu-toggle"  class="navigation-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <ul>
+           <li><a id="home-link" href="../index.html">Home</a></li>
+           <li><a href="../pages/education.html">Education</a></li>
+           <li><a href="../pages/education.html">Experience</a></li>
+           <li><a href="../pages/skill.html">Skillset</a></li>
+           <li><a href="../pages/portfolio.html">Portfolio</a></li>
+        </ul>
+        <a href="../pages/contact.html" class="outlined-button">Let’s chat</a>
+    </div>
+</section> 
+</main>
+<section id="contact">
+  <div class="container">
+    <div id="contact-me-form">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" >
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" >
+  
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="lastname" >
+  
+  
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject"  style="height:200px"></textarea>
+  
+       <button type="submit" id="submit" onclick="validateForm()"> Submit</button> 
+  
+    </div>
+  </div>
+</section>
+   
+<script src="../script.js"></script>
+<script>
+  var link = document.getElementById("home-link");
+
+// Add an event listener to the link
+link.addEventListener("click", function(e) {
+
+  console.log(e)
+  // Use the pushState method to add the new URL to the browser's history
+  history.pushState({}, "home", "index.html#skills");
+
+  // Use the location.reload method to reload the page with the new URL
+  location.reload();
+});
+</script>
+</body>
+</html>
